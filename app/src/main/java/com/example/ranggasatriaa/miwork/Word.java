@@ -10,13 +10,15 @@ public class Word{
     * */
     private String mEnglish;
     private String mMiwok;
+    private int mImage;
 
     /*
     * Word contructor
     * */
-    public Word(String english, String miwok){
+    public Word(String english, String miwok, int image){
         mEnglish = english;
         mMiwok   = miwok;
+        mImage   = image;
     }
 
     /*
@@ -31,6 +33,13 @@ public class Word{
     * */
     public String getMiwok(){
         return mMiwok;
+    }
+
+    /*
+    * Get image
+    * */
+    public int getImage(){
+        return mImage;
     }
 }
 
